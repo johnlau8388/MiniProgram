@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+	<!-- 左边 -->
+	<scroll-view class="leftside">
+		<view wx:for="{{menus}}" wx:for-item="item" wx:key="id">
+			<view class="{{tabIndex === index ? 'menu active' : 'menu'}}" data-index="{{index}}" data-id="d_{{item.id}}" bindtap='tabMenu'>
+				{{item.menu}}
+			</view>
+		</view>
+	</scroll-view>
+
+	<!-- 右边 -->
+    <view class="box">
+	<scroll-view class="item-content" scroll-y="true" scroll-with-animation="true" scroll-into-view="{{ScrollToId}}">
+		<view class="item" id="d_{{item.id}}" wx:for="{{items}}" wx:for-item="item" wx:key="id">
+				<image src="image/item-{{item.id}}.jpg"></image>
+				<text class="title">{{item.title}}</text>
+				<text class="{{item.active ? 'btn active' : 'btn'}}" bindtap='addOrder' data-id="{{item.id}}" data-index="{{index}}">添加</text>
+			</view>
+		
+	</scroll-view>
+    </view>
+	<!-- 底部 -->
+	<!-- <view class="{{bottomFlag ? 'bottom-bar' : 'bottom-bar hidden'}}"> -->
+	<view class="bottom-bar">
+		<view class="count">
+			共
+			<text class="num">{{orderCount.num}}</text>件
+		</view>
+		<view class="btn">
+			<text bindtap='cart'>查看已选</text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/finish/finish.wxml-->
+<view class='main'>
+    <label class='label'>{{content}}</label>
+</view>
+
+<view class='button'>
+    <button type='second' target='miniProgram' open-type='exit' bindtap='logOutBtn'>
+	<navigator target='miniProgram' open-type='exit'>返回</navigator>
+    </button>
+</view>

@@ -1,0 +1,34 @@
+/**index.wxss**/
+.window{
+	color:black;
+	text-align: right;
+}
+
+.newWindow{
+	color:red;
+}
+
+.title{
+	text-align:center;
+	font-size:24px;
+}
+
+.main{
+	/* align-content: center; */
+	text-align: center;
+	padding-top: 50px
+}
+
+.main .button{
+	position:absolute;
+	bottom:100px;
+	left: 100px;
+	right: 100px
+}
+
+.main .button2{
+	position:absolute;
+	bottom:50px;
+	left: 100px;
+	right: 100px
+}

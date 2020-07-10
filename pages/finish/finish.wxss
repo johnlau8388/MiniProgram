@@ -1,0 +1,14 @@
+/* pages/finish/finish.wxss */
+.window{
+	color:black;
+	text-align: right;
+}
+.main{
+	align-content: center;
+	text-align: center;
+	padding:100px 80px
+}
+.button{
+	align-content: center;
+	padding: 50px 100px
+}
